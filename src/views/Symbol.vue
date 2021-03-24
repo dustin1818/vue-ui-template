@@ -16,25 +16,26 @@
           <button class="bg-red-300 rounded-3xl px-5 py-1 text-xs uppercase">Try Free</button>
         </div>
       </nav>
-      <div class="flex flex-col flex-grow items-center justify-center">
-        <p class="text-md">Designed specially for you</p>
-        <p class="text-4xl font-semibold">We proudly present</p>
+      <!-- flex-grow to adapt remaining spaces of a flex parent div -->
+      <div class="flex flex-col flex-grow items-center justify-center max-md:py-16 max-h-md:py-24">
+        <p class="text-md max-md:sm">Designed specially for you</p>
+        <p class="text-4xl font-semibold max-md:text-3xl max-sm:text-2xl">We proudly present</p>
       </div>
     </article>
-    <article class="min-h-40/60 w-full relative ">
-      <div class="min-h-full w-1/2 absolute -top-20 left-0 right-0 m-auto bg-gray-900 max-xs:static max-xs:top-0 grid grid-cols-2">
-        <div class="px-3 flex flex-col justify-center">
-          <p class="text-md pb-1 font-semibold">A better way to Build website</p>
-          <p class="text-xs pb-3 font-light">
+    <article class="min-h-40/60 w-full relative bg-white-dark">
+      <div class="min-h-full w-1/2 max-md:w-3/4 absolute -top-20 left-0 right-0 m-auto bg-gray-900 grid grid-cols-2 max-sm:grid-cols-1">
+        <div class="px-3 flex flex-col justify-center max-sm:order-2 py-3">
+          <p class="text-md pb-1 font-semibold max-sm:text-sm max-sm:pb-1">A better way to Build website</p>
+          <p class="text-xs pb-3 font-light max-sm:hidden">
             One may speculate that over the course of time certain letters were added or deleted at various positions
             within the text. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny
             or nonsensical stories.
           </p>
-          <a class="text-xs uppercase ">learn more</a>
+          <a class="text-xs uppercase">learn more</a>
         </div>
-        <div>
+        <div class="">
           <div class="h-full w-full bg-red-200">
-            <img src="https://i.ibb.co/S59Xc0H/Photo-by-Toa-Heftiba.jpg" alt="Photo-by-Toa-Heftiba" class="max-w-full max-h-full">
+            <img src="https://i.ibb.co/S59Xc0H/Photo-by-Toa-Heftiba.jpg" alt="Photo-by-Toa-Heftiba" class="w-full h-full max-w-full max-h-full object-cover">
           </div>
         </div>
       </div>

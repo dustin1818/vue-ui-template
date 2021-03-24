@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Wireframe from '../views/Wireframe-One.vue'
+import Symbol from '../views/Symbol.vue'
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/wireframe',
-    name: 'Wireframe',
-    component: Wireframe
+    path: '/symbol',
+    name: 'Symbol',
+    component: Symbol
   },
 ]
 

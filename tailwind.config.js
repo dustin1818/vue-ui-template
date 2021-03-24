@@ -17,6 +17,7 @@ module.exports = {
         "max-md": { max: "768px" },
         "max-sm": { max: "425px" },
         "max-xs": { max: "320px" },
+        'max-h-md': {'raw': '(max-height: 768px)'},
       },
       fontFamily: {
         kiwi: ["Kiwi Maru", "serif"],
