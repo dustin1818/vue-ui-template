@@ -10,6 +10,7 @@ module.exports = {
         "60/40" : "60vh",
         "40/60" : "40vh",
         "110" : "110%",
+        "navigation" : "15vh",
       },
       screens: {
         "max-xl": { max: "1440px" },
@@ -20,8 +21,7 @@ module.exports = {
         'max-h-md': {'raw': '(max-height: 768px)'},
       },
       fontFamily: {
-        kiwi: ["Kiwi Maru", "serif"],
-        quick: ["Quicksand", "sans-serif"],
+        // callback-name: ["font", "font"],
       },
       colors: {
         'white-dark': '#F2F4E8',
