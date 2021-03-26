@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Symbol from '../views/Symbol.vue'
+import Jmaq from '../views/Jmaq.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/symbol',
     name: 'Symbol',
     component: Symbol
+  },
+  {
+    path: '/jmaq',
+    name: 'Jmaq',
+    component: Jmaq
   },
 ]
 
