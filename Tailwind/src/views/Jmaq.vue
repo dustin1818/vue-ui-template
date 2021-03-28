@@ -1,6 +1,6 @@
 <template>
-  <div class="jmaq-page bg-white-dark text-white-dark select-none">
-    <section class="bg-pict-landing px-20 max-md:px-8 font-poppins">
+  <div class="jmaq-page bg-white-dark text-white-dark select-none font-poppins">
+    <section class="bg-pict-landing px-20 max-md:px-8">
       <nav class="min-h-navigation grid grid-cols-2 max-lg:grid-cols-12 items-center py-8 max-md:py-6 scroll-out-1440">
         <div class="max-lg:col-span-4">
           <p class="text-xl">Jmaq Inc.</p>
@@ -21,23 +21,25 @@
           <p class="text-5xl max-md:text-4xl max-md:leading-normal pb-5 max-md:pb-1 font-medium">Your unique Brand.</p>
           <p class="text-5xl max-md:text-4xl max-md:leading-normal pb-9 max-md:pb-8 font-medium">Improved to <span class="text-mango">Perfection.</span></p>
           <p class="text-xl max-md:text-lg max-md:leading-normal pb-8 max-md:pb-8 max-md:pr-2">Let us help you transform your business.</p>
-          <button class="greater-triangle bg-blue-500 p-2 max-md:p-3 rounded-md text-lg max-md:text-sm btn-size">
+          <button class="greater-triangle bg-blue-500 p-2 max-md:p-3 rounded-md text-lg max-md:text-sm btn-size flex justify-center">
             Get Started
           </button>
         </div>
       </article>
     </section>
-    <section class="min-h-screen text-black ">
-      <article class="grid grid-cols-2 max-md:grid-cols-1 py-14 max-md:py-7 scroll-out-1440">
-        <div class="max-md:py-3 flex items-center pl-20 max-md:pl-0 relative img-edge-1">
+    <section class="text-black flex flex-col">
+      <article class="grid gap-8 grid-cols-2 max-md:grid-cols-1 scroll-out-1440 flex-grow pt-20">
+        <div class="pl-20 max-md:pl-0 max-md:pr-8 flex relative">
+          <!-- img div is relative because the before and after is an absolute element -->
+          <div class="relative img-edge-1 ">
           <!-- Adapt image height to parent and adjust its heights instead of width under akward brekapoints-->
-          <img src="https://i.ibb.co/SfD3x97/JMAQBenefits-Image-1.png" class="h-full max-h-full object-cover pr-20 max-md:pr-8 z-10">
-          <img src="https://i.ibb.co/ZhLhMH9/JMAQBenefits-Graphic-1.png" class="absolute rounded-lg h-20 max-md:h-16 max-sm:h-12 top-0 m-3 max-md:my-6 max-md:mx-8 z-20">
-          <div class="yellow-box"></div>
+            <img src="https://i.ibb.co/SfD3x97/JMAQBenefits-Image-1.png" class="h-full max-h-full object-cover z-10">
+          </div>
+          <img src="https://i.ibb.co/ZhLhMH9/JMAQBenefits-Graphic-1.png" class="absolute rounded-lg h-20 max-md:h-16 top-0 m-3 max-md:my-6 max-md:mx-8 z-20">
         </div>
-        <div class="max-md:py-3 pr-24 max-md:px-8 flex flex-col justify-center">
+        <div class="pr-24 max-md:px-8 flex flex-col justify-center ">
           <p class="text-lg max-md:text-sm text-mango font-medium pb-2">What can you achieve</p>
-          <p class="text-4xl max-md:text-3xl font-medium pb-3">
+          <p class="text-3xl max-md:text-3xl font-medium pb-3">
             Duis aute Irure dolor in reprehen derit in Voluptate velit esse illu dolore eu fugiat.
           </p>
           <p class="text-lg max-md:text-sm">
@@ -47,51 +49,107 @@
           </p>
         </div>
       </article>
-      <article class="px-20 max-md:px-8">
-        <p class="text-lg max-md:text-sm text-mango font-medium">What can we do for you</p>
-        <div class="grid grid-cols-3 justify-center max-md:grid-cols-1">
+      <article class="px-20 max-md:px-8 py-14 max-md:pt-7 scroll-out-1440">
+        <p class="text-lg max-md:text-sm text-mango font-medium pb-2 max-md:pb-4 ">What can we do for you</p>
+        <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-3 max-lg:gap-6 max-md:gap-8  justify-center">
           <div class="flex flex-col">
-            <img src="" class="">
-            <p class="text-xl max-md:text-lg font-medium">Search Engine Optimization</p>
-            <p class="text-sm max-md:text-sm">
+            <div class="relative mb-3 img-edge-2">
+              <img src="https://i.ibb.co/J72sHdS/Performance-Audits-1.png" class="w-full max-w-full object-cover z-10">
+              <!-- my-auto aligned the img element to its parent div-->
+              <img src="https://i.ibb.co/4Wpv3wB/Solutions-3-1.png" class="absolute my-auto top-0 bottom-0 right-0 mr-5 rounded-lg h-18 z-20">
+            </div>
+            <p class="text-xl max-md:text-lg font-medium pb-3">Search Engine Optimization</p>
+            <p class="text-sm max-md:text-sm pb-2">
               Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
               aut odit aut fugit, sed quia consequuntur magni dolores 
               eos qui ratione voluptatem sequi nesciunt. Neque porro 
               quisquam est, qui dolorem ipsum quia dolor sit amet.
             </p>
-            <a href="" class="greater-triangle text-sm font-medium">
+            <a href="" class="greater-triangle-sm text-sm font-medium text-blue-500 flex">
               Learn more
             </a>
           </div>
           <div class="flex flex-col">
-            <img src="" class="">
-            <p class="text-xl max-md:text-lg font-medium">Content Management</p>
-            <p class="text-sm max-md:text-sm">
+            <div class="relative mb-3 img-edge-2">
+              <img src="https://i.ibb.co/FmV0rrf/UX-Audits-1.png" class="w-full max-w-full object-cover z-10">
+              <img src="https://i.ibb.co/1Z4RdSb/Solutions-2-2.png" class="absolute my-auto top-0 bottom-0 right-0 mr-5 rounded-lg h-18 z-20">
+            </div>
+            <p class="text-xl max-md:text-lg font-medium pb-3">Content Management</p>
+            <p class="text-sm max-md:text-sm pb-2">
               At vero eos et accusamus et iusto odio dignissimos 
               ducimus qui blanditiis praesentium voluptatum deleniti 
               atque corrupti quos dolores et quas molestias excepturi 
-              sint occaecati cupiditate non provident, similique sunt in 
-              culpa qui officia deserunt.
+              sint occaecati cupiditate non provident, similique sunt in
             </p>
-            <a href="" class="greater-triangle text-sm font-medium">
+            <a href="" class="greater-triangle-sm text-sm font-medium text-blue-500 flex">
               Learn more
             </a>
           </div>
           <div class="flex flex-col">
-            <img src="" class="">
-            <p class="text-xl max-md:text-lg font-medium">Social Media Marketing</p>
-            <p class="text-sm max-md:text-sm">
+            <div class="relative mb-3 img-edge-2">
+              <img src="https://i.ibb.co/fvykT4D/Accessibility-Reports-1.png" class="w-full max-w-full object-cover z-10">
+              <img src="https://i.ibb.co/r317zD8/Solutions-1-3.png" class="absolute my-auto top-0 bottom-0 right-0 mr-5 rounded-lg h-18 z-20">
+            </div>
+            <p class="text-xl max-md:text-lg font-medium pb-3">Social Media Marketing</p>
+            <p class="text-sm max-md:text-sm pb-2">
               Uis aute irure dolor in reprehenderit in voluptate velit esse 
               cillum dolore eu fugiat nulla pariatur. Excepteur sint 
               occaecat cupidatat non proident, sunt in culpa qui officia 
               deserunt mollit anim id est laborum beatae vitae dicta 
               sunt explicabo. 
             </p>
-            <a href="" class="greater-triangle text-sm font-medium">
+            <a href="" class="greater-triangle-sm text-sm font-medium text-blue-500 flex">
               Learn more
             </a>
           </div>
         </div>
+      </article>
+    </section>
+    <section class="min-h-screen bg-blue-900">
+
+    </section>
+    <section class="text-black flex flex-col py-20 scroll-out-1440">
+      <article class="grid gap-16 max-md:gap-8 grid-cols-2 max-md:grid-cols-1 flex-grow ">
+        <div class="pl-20 max-md:pr-0 max-md:pl-8 flex relative">
+          <!-- img div is relative because the before and after is an absolute element -->
+          <div class="relative img-edge-3">
+          <!-- Adapt image height to parent and adjust its heights instead of width under akward brekapoints-->
+            <img src="https://i.ibb.co/gZp5znY/Analytics-1.png" class="h-full max-h-full object-cover z-10">
+          </div>
+        </div>
+        <div class="pr-24 max-md:px-8 flex flex-col justify-center">
+          <p class="text-lg max-md:text-sm text-mango font-medium pb-2">What we recently discovered</p>
+          <p class="text-3xl max-md:text-3xl font-medium pb-3">
+            The new trend of Lorem Ipsum.
+          </p>
+          <p class="text-lg max-md:text-sm pb-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut 
+            labore et dolore  magna aliqua. Ut enim ad minim veniam, quis nost exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <a href="" class="text-lg max-md:text-sm greater greater-triangle-sm text-blue-500 font-medium">
+            Read More 
+          </a>
+        </div>
+      </article>
+      <article class="grid grid-cols-12 items-center pt-20 max-md:px-8">
+        <div class="yellow-line col-span-1 max-md:hidden"></div>
+        <form class="bg-red-500 col-span-10 max-md:col-span-12">
+          <p class="text-3xl">
+            Subscribe to our <span class="text-mango">Newsletter</span>
+          </p>
+          <p class="text-sm">
+            Voluptatem accusantium doloremque laudantium, totam rem ipsum, aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. 
+          </p>
+          <div class="flex items-center">
+            <div class="h-full w-full flex-grow bg-red-200">
+              <input type="text" placeholder="Email Address" class="h-full">
+            </div>
+            <button class="greater-triangle bg-blue-500 text-lg max-md:text-sm btn-size flex justify-center items-center">Submit</button>
+          </div>
+        </form>
+        <div class="yellow-line col-span-1 max-md:hidden"></div>
       </article>
     </section>
   </div>
@@ -124,6 +182,9 @@
 
 .min-h-landing-screen{
   min-height: 85vh;
+  @media screen and(min-width: 1440px){
+    min-height: 650px;
+  }
 }
 
 .font-poppins{
@@ -162,6 +223,17 @@
 .greater-triangle::after{
     content: "\FF1E";
     font-size: 16px;
+    font-weight: 1000;
+    padding-left: 6px;
+    position: relative;
+}
+
+.greater-triangle-sm::after{
+    content: "\FF1E";
+    font-size: 10px;
+    padding-top: .5px;
+    padding-left: 3px;
+    font-weight: 1000;
     position: relative;
 }
 
@@ -169,52 +241,79 @@
   &:before {
     content: "";
     position: absolute;
-    height: 0.5rem;
-    width: 50%;
-    right: 0;
-    bottom: -5px;
     background-color: #ffc324;
-    margin-right: 80px;
-    @media screen and(max-width: 768px) {
-      left: 0;
-      bottom: 7px;
-      margin-right: 32px;
-      width: 50%;
-    }
-    @media screen and(max-width: 600px) {
-      bottom: 7px;
-      left: auto;
-      right: 0;
-      margin-right: 32px;
-      width: 60%;
-    }
+    height: 0.5rem;
+    width: 65%;
+    right: 0;
+    bottom: -8px;
   }
   &:after {
     content: "";
     position: absolute;
-    height: 70%;
-    width: 0.5em;
     background-color: #ffc324;
-    z-index: 2;
-    right: -4px;
-    bottom: -5px;
-    margin-right: 80px;
-    @media screen and(max-width: 768px) {
-      left: -4px;
-      right: auto;
-      bottom: 7px;
-      z-index: 99;
-    }
-    @media screen and(max-width: 600px) {
-      display: block;
-      left:auto;
-      right: -4px;
-      bottom: 7px;
-      margin-right: 32px;
-      height: 60%;
-      z-index: 1;
-    }
+    height: 65%;
+    width: 0.5rem;
+    right: -8px;
+    bottom: -8px;
   }
 }
 
+.img-edge-2 {
+  background-color: black;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #ffc324;
+    height: 0.4rem;
+    width: 40%;
+    top:0;
+    right: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #ffc324;
+    height: 0.4rem;
+    width: 40%;
+    bottom:0;
+    left: 0;
+  }
+}
+
+.img-edge-3 {
+  background-color: black;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #ffc324;
+    height: 0.5rem;
+    width: 65%;
+    top:-8px;
+    left:-8px;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #ffc324;
+    height: 80%;
+    width:  0.5rem;
+    top: -8px;
+    left:-8px;
+  }
+}
+
+.yellow-line{
+    background-color: #ffc324;
+    height: 0.5rem;
+    width:  100%;
+}
+
+input{
+  width: 100%;
+  background-color: #F2F4E8;
+  text-indent: 10px;
+  &:focus{
+    outline: none;
+  }
+}
 </style>
