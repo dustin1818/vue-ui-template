@@ -3,7 +3,7 @@
     <section class="bg-pict-landing px-20 max-md:px-8">
       <nav class="min-h-navigation grid grid-cols-2 max-lg:grid-cols-12 items-center py-8 max-md:py-6 scroll-out-1440">
         <div class="max-lg:col-span-4">
-          <p class="text-xl">Jmaq Inc.</p>
+          <p class="text-xl">JMaq Inc.</p>
         </div>
         <div class="flex justify-between max-md:hidden max-lg:col-span-8">
           <a href="#" class="text-sm max-lg:pr-2">What we do</a>
@@ -21,7 +21,7 @@
           <p class="text-5xl max-md:text-4xl max-md:leading-normal pb-5 max-md:pb-1 font-medium">Your unique Brand.</p>
           <p class="text-5xl max-md:text-4xl max-md:leading-normal pb-9 max-md:pb-8 font-medium">Improved to <span class="text-mango">Perfection.</span></p>
           <p class="text-xl max-md:text-lg max-md:leading-normal pb-8 max-md:pb-8 max-md:pr-2">Let us help you transform your business.</p>
-          <button class="greater-triangle bg-blue-500 p-2 max-md:p-3 rounded-md text-lg max-md:text-sm btn-size flex justify-center">
+          <button class="greater-triangle bg-blue-500 p-2 max-md:p-3 rounded-md text-lg max-md:text-sm btn-size-lg flex justify-center">
             Get Started
           </button>
         </div>
@@ -105,10 +105,10 @@
         </div>
       </article>
     </section>
-    <section class="min-h-screen bg-blue-900">
+    <section class="min-h-screen bg-bl">
 
     </section>
-    <section class="text-black flex flex-col py-20 scroll-out-1440">
+    <section class="text-black flex flex-col pt-20 pb-40 max-md:pb-20 scroll-out-1440">
       <article class="grid gap-16 max-md:gap-8 grid-cols-2 max-md:grid-cols-1 flex-grow ">
         <div class="pl-20 max-md:pr-0 max-md:pl-8 flex relative">
           <!-- img div is relative because the before and after is an absolute element -->
@@ -133,24 +133,65 @@
           </a>
         </div>
       </article>
-      <article class="grid grid-cols-12 items-center pt-20 max-md:px-8">
+      <article class="grid grid-cols-12 items-center pt-40 max-md:pt-20">
         <div class="yellow-line col-span-1 max-md:hidden"></div>
-        <form class="bg-red-500 col-span-10 max-md:col-span-12">
-          <p class="text-3xl">
-            Subscribe to our <span class="text-mango">Newsletter</span>
-          </p>
-          <p class="text-sm">
-            Voluptatem accusantium doloremque laudantium, totam rem ipsum, aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. 
-          </p>
-          <div class="flex items-center">
-            <div class="h-full w-full flex-grow bg-red-200">
-              <input type="text" placeholder="Email Address" class="h-full">
+        <div class="col-span-10 max-md:col-span-12">
+          <form class="w-form ">
+            <p class="text-3xl pb-2">
+              Subscribe to our <span class="text-mango">Newsletter</span>
+            </p>
+            <p class="text-xs pb-4">
+              Voluptatem accusantium doloremque laudantium, totam rem ipsum, aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto. 
+            </p>
+            <div class="flex items-center text-sm">
+              <div class="flex-grow border-gr rounded-md p-5px mr-2">
+                <input type="text" placeholder="Email Address" class="rounded-md">
+              </div>
+              <button class="greater-triangle bg-blue-500  btn-size-sm flex justify-center items-center rounded-md">Submit</button>
             </div>
-            <button class="greater-triangle bg-blue-500 text-lg max-md:text-sm btn-size flex justify-center items-center">Submit</button>
-          </div>
-        </form>
+          </form>
+        </div>
         <div class="yellow-line col-span-1 max-md:hidden"></div>
       </article>
+    </section>
+    <section class="px-20 max-md:px-8 scroll-out-1440 bg-bl text-sm">
+        <article class="pt-8 ">
+          <p class="text-xl text-mango">JMaq Inc.</p>
+        </article>
+        <article class="grid grid-cols-12 max-md:grid-cols-2">
+          <div class=" flex flex-col py-5 col-span-2 max-md:col-span-1">
+            <a href="" class="pb-1 max-md:pb-2">What we do</a>
+            <a href="" class="pb-1 max-md:pb-2">Who we are</a>
+            <a href="" class="pb-1 max-md:pb-2">Our Insights</a>
+            <a href="" class="pb-1 max-md:pb-2">Join Us</a>
+            <a href="" class="pb-1 max-md:pb-2">Contact Us</a>
+            <a href="" class="pb-1 max-md:pb-2 hidden max-md:block">Privacy Policy</a>
+            <a href="" class="pb-1 max-md:pb-2 hidden max-md:block">Cookies</a>
+          </div>
+          <div class="flex justify-center py-5 col-span-7 max-md:col-span-1">
+            <div class="flex max-md:flex-col max-md:justify-between max-md:py-2">
+              <p class="px-4 text-blue-500">
+                Call Us: <span class="block text-white">(12) 345 678</span>
+              </p>
+              <p class="px-4 text-blue-500">
+                Email Us: <span class="block text-white">hello@jmaq.com</span>
+              </p>
+              <p class="px-4 text-blue-500">
+                Call Us: <span class="block text-white">Taguig, Philippines</span>
+              </p>
+            </div>
+          </div>
+          <div class="py-5 col-span-3 max-md:col-span-2 flex flex-col items-end max-md:items-center pb-10">
+            <div class="flex pb-2 max-md:hidden">
+              <a href="" class="px-5">Privacy Policy</a>
+              <a href="">Cookies</a>
+            </div>
+            <p class="max-md:font-light">
+              © 2020, Steven Guevarra
+              <span class="block max-md:inline">All Rights Reserved.</span>
+            </p>
+          </div>
+        </article>
     </section>
   </div>
 </template>
@@ -160,6 +201,10 @@
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bg-bl{
+  background-color: #01060D;
+}
 
 .scroll-out-1440{
   @media screen and(min-width: 1440px){
@@ -216,8 +261,13 @@
   }
 }
 
-.btn-size{
+.btn-size-lg{
   width: 150px;
+}
+
+.btn-size-sm{
+  padding: 10px;
+  color: white;
 }
 
 .greater-triangle::after{
@@ -315,5 +365,20 @@ input{
   &:focus{
     outline: none;
   }
+}
+
+.w-form{
+  width: 450px;
+  padding: 0 10px;
+  margin: 0 auto; 
+}
+
+.p-5px{
+  padding: 10px;
+}
+
+.border-gr{
+  border-width: 1px;
+  border-color: rgba(0,0,0,.35);
 }
 </style>
