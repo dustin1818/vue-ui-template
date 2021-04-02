@@ -700,4 +700,13 @@ export default {
 </script>
 
 <style lang="scss">
+.swiper-slide {
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #3d83f6 !important;
+    background: #3d83f6 !important;
+}
 </style>
