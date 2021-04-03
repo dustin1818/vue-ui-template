@@ -683,8 +683,7 @@
 
 <script>
 import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
+import "../css/pagination.scss";
 import "../css/jmaq.scss"
 
 import SwiperCore, { Pagination, A11y } from "swiper";
