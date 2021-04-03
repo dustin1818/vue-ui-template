@@ -683,8 +683,7 @@
 
 <script>
 import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
+import "../css/pagination.scss";
 import "../css/jmaq.scss"
 
 import SwiperCore, { Pagination, A11y } from "swiper";
@@ -700,4 +699,13 @@ export default {
 </script>
 
 <style lang="scss">
+.swiper-slide {
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #3d83f6 !important;
+    background: #3d83f6 !important;
+}
 </style>
