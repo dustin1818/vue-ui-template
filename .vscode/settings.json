@@ -1,0 +1,6 @@
+{
+    // To remove css error in tailwind @apply
+    "css.validate": false,
+    "scss.validate": false,
+    "vetur.validation.style": false
+}

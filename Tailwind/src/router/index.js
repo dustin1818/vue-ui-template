@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Symbol from '../views/Symbol.vue'
-import Jmaq from '../views/Jmaq.vue'
+import Jmaq from '../views/Jmaq/Jmaq.vue'
 
 const routes = [
   {
