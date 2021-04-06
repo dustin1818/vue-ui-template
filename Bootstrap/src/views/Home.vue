@@ -1,9 +1,8 @@
 <template>
-<!-- <h1>Hello World</h1> -->
-<section class="front-page-section">
+  <div class='home'>
 
-  
-
-</section>
-
+  </div>
 </template>
+
+<script>
+</script>
